@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090609" />
+  <meta name="description" content="Vanta Kuroda // interactive Arasaka asset dossier" />
+  <link rel="icon" href="assets/icon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>VANTA // KURODA PROTOCOL</title>
+</head>
+<body class="booting">
+  <audio id="ambient" src="assets/Vanta.mp3" preload="auto" loop autoplay playsinline></audio>
+
+  <div id="boot" class="boot" aria-hidden="false">
+    <div class="boot-flower" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <p>ARASAKA // RESTRICTED PERSONNEL ARCHIVE</p>
+    <h1>KURODA PROTOCOL</h1>
+    <div class="bootline"><i></i></div>
+    <small id="bootText">decrypting biometric archive…</small>
+    <button id="enterBtn">ENTER DOSSIER</button>
+  </div>
+
+  <div class="bg-floral" aria-hidden="true"></div>
+  <div class="bg-vignette" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div id="petals" class="petals" aria-hidden="true"></div>
+  <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <button id="menuBtn" class="icon-btn" aria-label="Open dossier navigation">☰</button>
+    <div class="brand">
+      <div class="brand-seal">黒</div>
+      <div><b>KURODA // ASSET FILE</b><span>黒田 ヴァンタ</span></div>
+    </div>
+    <div class="top-actions">
+      <button id="audioBtn" class="audio-btn" aria-label="Toggle ambient audio"><span class="audio-dot"></span><span id="audioLabel">AMBIENT // OFF</span></button>
+      <button id="searchBtn" class="icon-btn" aria-label="Search dossier">⌕</button>
+    </div>
+  </header>
+
+  <aside id="drawer" class="drawer" aria-hidden="true">
+    <div class="drawer-top"><div><small>ARCHIVE INDEX</small><b>VANTA KURODA</b></div><button id="closeDrawer">×</button></div>
+    <nav id="drawerNav"></nav>
+    <div class="drawer-bottom"><span>SECURITY LEVEL</span><b>BLACK // INTERNAL</b></div>
+  </aside>
+  <div id="scrim" class="scrim"></div>
+
+  <main>
+    <section id="overview" class="hero section-anchor" data-title="Overview">
+      <div class="hero-media"><img src="assets/vanta_5.webp" alt="Vanta Kuroda" /></div>
+      <div class="hero-shade"></div>
+      <div class="hero-kanji" aria-hidden="true">黒<br>田</div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">ARS // VK-01 // EXPERIMENTAL ASSET</p>
+        <h1><span>VANTA</span><em>KURODA</em></h1>
+        <p class="hero-tagline">Arasaka's favorite experiment.</p>
+        <div class="hero-tags"><span>STANDBY ASSET</span><span>PROTOTYPE CONVERSION</span><span>CONDITIONED RESPONSE</span><span>FERAL BASELINE</span></div>
+      </div>
+      <div class="hero-readout">
+        <span>STATUS</span><b><i></i> STANDBY</b><span>THREAT CLASS</span><b>RESTRICTED</b>
+      </div>
+      <button class="scroll-cue" data-jump="profile">OPEN FILE <span>↓</span></button>
+    </section>
+
+    <section id="profile" class="section section-anchor" data-title="Profile">
+      <div class="section-heading reveal"><span>01</span><div><small>SUBJECT OVERVIEW</small><h2>Profile</h2></div></div>
+      <div class="profile-layout">
+        <article class="glass profile-card reveal">
+          <div class="portrait-window"><img src="assets/vanta_6.webp" alt="Vanta portrait"/><div class="reticle"></div><span>LIVE IMAGE // ARCHIVE</span></div>
+          <dl>
+            <div><dt>NAME</dt><dd>Vanta Kuroda</dd></div>
+            <div><dt>AFFILIATION</dt><dd>Arasaka</dd></div>
+            <div><dt>CLASS</dt><dd>Experimental Full-Conversion Asset</dd></div>
+            <div><dt>STATUS</dt><dd class="live"><i></i>Standby</dd></div>
+            <div><dt>PRIMARY TRAIT</dt><dd>Adaptive / Uncontained</dd></div>
+          </dl>
+        </article>
+        <article class="glass core-card reveal">
+          <p class="label">CORE READ</p>
+          <blockquote>Highly engineered. Highly capable. Comfortable being something strange — but not comfortable believing she is allowed to need people.</blockquote>
+          <div class="signal-bars"><span style="--p:94%"><b>CYBERNETIC INTEGRATION</b></span><span style="--p:88%"><b>INDEPENDENT FUNCTION</b></span><span style="--p:61%"><b>TRUST / ATTACHMENT</b></span><span style="--p:97%"><b>SURVIVAL ADAPTATION</b></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="backstory" class="section section-anchor" data-title="Backstory">
+      <div class="section-heading reveal"><span>02</span><div><small>ORIGIN TRACE</small><h2>Before the Weapon</h2></div></div>
+      <div class="chapter-stack">
+        <article class="chapter reveal" data-chapter="CHILDHOOD">
+          <div class="chapter-no">A</div><div><h3>Born inside Arasaka's gravity</h3><p>Vanta was born into an Arasaka-connected Japanese family. Before the chrome, before conditioning, she was already difficult to contain: climbing, hiding, perching above eye level, squeezing into places adults could not reach, and vanishing into blind spots because that was simply where she felt most natural.</p><p>Her feral-cat behavior is not programming. It is one of the clearest surviving pieces of the girl who existed before the project.</p></div>
+        </article>
+        <article class="chapter reveal" data-chapter="FATHER">
+          <div class="chapter-no">B</div><div><h3>Exceptional became exploitable</h3><p>Her father saw her unusual resilience and intelligence as potential to cultivate. Ambitious, polished, and deeply Arasaka-minded, he pushed hardest to place her in the experimental program. He likely believed he was giving her an advantage rather than sacrificing her.</p><p>His lesson was simple and poisonous: endure, improve, remain useful — and you have value.</p></div>
+        </article>
+        <article class="chapter reveal" data-chapter="MOTHER">
+          <div class="chapter-no">C</div><div><h3>Love without protection</h3><p>Her mother loved her, but failed to stop any of it. She comforted Vanta after procedures, brushed her hair, sat with her, promised things would be okay — and still handed her back to the program.</p><p>Vanta came to despise the softness. Her mother's failure left a sharper lesson: <strong>love without courage is worthless.</strong></p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="program" class="section section-anchor" data-title="The Program">
+      <div class="section-heading reveal"><span>03</span><div><small>PROJECT HISTORY</small><h2>The Program</h2></div></div>
+      <div class="program-visual reveal"><img src="assets/vanta_3.webp" alt="Vanta crouched in a dark industrial space"/><div class="program-overlay"><b>SUBJECT VK-01</b><small>PROTO-CONVERSION // SURVIVOR</small></div></div>
+      <div class="accordion-grid">
+        <details class="glass reveal" open><summary><span>01</span>Purpose</summary><p>Arasaka's next-generation cybernetic/full-conversion project: an elegant, controllable, independently functional weapon that could outperform conventional special-response assets without losing adaptive cognition.</p></details>
+        <details class="glass reveal"><summary><span>02</span>The cohort</summary><p>Vanta was one of several young subjects. She formed attachments — especially to younger kids — and tried to protect them. They did not survive the process. She did.</p></details>
+        <details class="glass reveal"><summary><span>03</span>First irreversible conversion</summary><p>Her lower face and jaw were likely the first major point of no return. Her normal mouth was replaced by a weaponized mechanical system: faceplate, mantis-like structures, and a direct food chute.</p></details>
+        <details class="glass reveal"><summary><span>04</span>Why she survived</summary><p>Not one trait. Everything. Neural compatibility, cyberware acceptance, reflex integration, recovery, cognition, pain tolerance, mission function, adaptation, and sheer survival. Every time another subject hit a limit, Vanta survived another step.</p></details>
+      </div>
+    </section>
+
+    <section id="conditioning" class="section section-anchor" data-title="Conditioning">
+      <div class="section-heading reveal"><span>04</span><div><small>BEHAVIORAL CONTROL SUITE</small><h2>Conditioning</h2></div></div>
+      <div class="conditioning-shell reveal">
+        <div class="conditioning-copy"><p>Resistance brought restraint, isolation, re-education, repetition, and sensory control. The recurring image is brutally simple: a freezing dark room, Vanta strapped to a table, almost no light, a voice overhead repeating instructions until language became reflex.</p><p>The system rewarded silence, precision, pain tolerance, emotional suppression, rapid recovery, and successful function. It taught her that being easy to manage was a form of goodness.</p></div>
+        <div class="condition-grid"><div><span>PAIN ADAPTATION</span><i style="--v:97%"></i></div><div><span>COMMAND RESPONSE</span><i style="--v:94%"></i></div><div><span>AUTONOMY RETAINED</span><i style="--v:61%"></i></div><div><span>FERAL SUPPRESSION</span><i style="--v:43%"></i></div></div>
+        <button id="activationBtn" class="activation"><span class="warn">警告</span><b>VANTA, RETURN TO FUNCTION</b><small>AUTHORIZED CONDITIONING TRIGGER</small></button>
+      </div>
+    </section>
+
+    <section id="cyberware" class="section section-anchor" data-title="Cyberware">
+      <div class="section-heading reveal"><span>05</span><div><small>BODY / SYSTEMS</small><h2>Beautiful Machinery</h2></div></div>
+      <div class="cyber-showcase reveal">
+        <img src="assets/vanta_4.webp" alt="Vanta's exposed cyberware"/>
+        <button class="hotspot h1" data-note="Lower-face conversion: weaponized jaw, mantis-like structures, direct feeding system.">01</button>
+        <button class="hotspot h2" data-note="Gold predator optics: defining visual signature, especially in darkness.">02</button>
+        <button class="hotspot h3" data-note="Extensive torso, arm, hip, leg and nervous-system integration.">03</button>
+        <div id="hotspotNote" class="hotspot-note">Tap a system marker.</div>
+      </div>
+      <div class="cyber-copy-grid">
+        <article class="glass reveal"><small>BODY OWNERSHIP</small><h3>Forced origin. Chosen identity.</h3><p>Vanta hates that the choice was taken from her. She does not hate what she is now. Her cyberware belongs to her, and she enjoys displaying it rather than hiding it.</p></article>
+        <article class="glass reveal"><small>AUTONOMY</small><h3>Display is not access.</h3><p>Revealing clothing and visible chrome are choices. Maintenance access is different. Being displayed by her own choice does not give technicians or handlers ownership of her body.</p></article>
+      </div>
+    </section>
+
+    <section id="personality" class="section section-anchor" data-title="Personality">
+      <div class="section-heading reveal"><span>06</span><div><small>BEHAVIORAL PROFILE</small><h2>Normal Vanta</h2></div></div>
+      <div class="trait-orbit reveal" id="traitOrbit"><button>quiet</button><button>observant</button><button>curious</button><button>catlike</button><button>protective</button><button>restless</button><button>selective</button><button>sensory-driven</button><button>hard to contain</button></div>
+      <div class="personality-grid">
+        <article class="glass reveal"><small>ATTACHMENT STYLE</small><h3>Orbiting</h3><p>When she likes someone, she stays near them. She follows, perches, sleeps nearby, occupies their blind spots, and seeks proximity without demanding conversation.</p></article>
+        <article class="glass reveal"><small>COMFORT LANGUAGE</small><h3>Environment over reassurance</h3><p>Darkness. Small hidden spaces. Weight. Rain. Mechanical rhythm. A familiar person nearby. Practical care reaches her far more reliably than pity or speeches.</p></article>
+        <article class="glass reveal"><small>CORE CONTRADICTION</small><h3>Fearless body, cautious need</h3><p>She knows she is beautiful, dangerous, and capable. Yet she can still assume she is crowding people, asking for too much, or becoming difficult simply by needing comfort.</p></article>
+      </div>
+    </section>
+
+    <section id="status" class="section section-anchor" data-title="Current Status">
+      <div class="section-heading reveal"><span>07</span><div><small>ACTIVE FILE</small><h2>Standby Asset</h2></div></div>
+      <div class="standby reveal">
+        <div class="standby-radar"><i></i><i></i><i></i><b>VK</b></div>
+        <div><p class="big-red">STATUS // STANDBY</p><p>Vanta does not maintain a conventional job. She is too specialized and too expensive to waste on routine security work. Arasaka keeps her close, monitored, maintained, and loosely free.</p><p>That freedom is functional containment. When allowed to wander, hide, socialize, and build routines, she stays near Arasaka voluntarily. When something requires <em>her</em>, she is deployed.</p></div>
+      </div>
+    </section>
+
+    <section id="relationship" class="section section-anchor" data-title="Adam Smasher">
+      <div class="section-heading reveal"><span>08</span><div><small>RELATIONSHIP FILE</small><h2>Adam Smasher</h2></div></div>
+      <div class="relationship-hero reveal"><div class="relationship-line"><span>VANTA</span><i></i><span>ADAM</span></div><blockquote>Adam chose the machine. Vanta had it forced onto her, then learned to love what she became.</blockquote></div>
+      <div class="relationship-grid">
+        <article class="glass reveal"><small>WHY SHE LIKES HIM</small><p>Mass. Servos. Footsteps. Voice processing. Predictability. Baseline irritation. He does not pity her, and he does not require her to perform humanity.</p></article>
+        <article class="glass reveal"><small>WHY HE NOTICES HER</small><p>She is not afraid of him, does not worship him, and treats his body like machinery worth understanding rather than a legend to fear.</p></article>
+        <article class="glass reveal"><small>RELATIONSHIP LANGUAGE</small><p>Quiet proximity. Practical accommodation. Showing up. Sleeping nearby. Orbiting. Eventually climbing onto him.</p></article>
+        <article class="glass reveal"><small>CORE CONFLICT</small><p>Vanta has deep trauma around control and ownership. Adam is comfortable being Arasaka's weapon. He chose transformation. She survived it.</p></article>
+      </div>
+      <div class="perch reveal"><span>SHADOW</span><i>→</i><span>TRUST</span><i>→</i><span>BOUNDARY TESTING</span><i>→</i><strong>PERCH ACQUIRED</strong></div>
+    </section>
+
+    <section id="timeline" class="section section-anchor" data-title="Timeline">
+      <div class="section-heading reveal"><span>09</span><div><small>CHRONOLOGY</small><h2>Trace History</h2></div></div>
+      <div class="timeline">
+        <article class="reveal"><time>CHILDHOOD</time><h3>Born into Arasaka's orbit</h3><p>Curious, climbing, hiding, protective, difficult to contain.</p></article>
+        <article class="reveal"><time>ADOLESCENCE</time><h3>Entered experimental program</h3><p>Father advocated. Mother failed to stop it. Cohort formed.</p></article>
+        <article class="reveal"><time>CONVERSION</time><h3>Lower-face replacement</h3><p>The first unmistakably irreversible transformation.</p></article>
+        <article class="reveal"><time>PROGRAM PEAK</time><h3>The survivor</h3><p>Other subjects failed or died. Vanta became the successful prototype.</p></article>
+        <article class="reveal"><time>CONDITIONING</time><h3>Return to function</h3><p>Behavioral control and activation state integrated.</p></article>
+        <article class="reveal"><time>CURRENT</time><h3>Standby</h3><p>Loosely autonomous, closely retained, activated only when Arasaka needs the thing it built.</p></article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section section-anchor" data-title="Gallery">
+      <div class="section-heading reveal"><span>10</span><div><small>VISUAL ARCHIVE</small><h2>Surveillance / Personal</h2></div></div>
+      <div id="galleryGrid" class="gallery-grid reveal">
+        <button><img src="assets/vanta_1.webp" alt="Vanta archive image 1"/></button>
+        <button><img src="assets/vanta_2.webp" alt="Vanta archive image 2"/></button>
+        <button><img src="assets/vanta_3.webp" alt="Vanta archive image 3"/></button>
+        <button><img src="assets/vanta_4.webp" alt="Vanta archive image 4"/></button>
+        <button><img src="assets/vanta_5.webp" alt="Vanta archive image 5"/></button>
+        <button><img src="assets/vanta_6.webp" alt="Vanta archive image 6"/></button>
+        <button><img src="assets/vanta_7.webp" alt="Vanta archive image 7"/></button>
+        <button><img src="assets/vanta_8.webp" alt="Vanta archive image 8"/></button>
+        <button><img src="assets/photomode_14112026_025931.webp" alt="Vanta red-light portrait"/></button>
+        <button><img src="assets/photomode_14112026_025611.webp" alt="Vanta in red-lit industrial setting"/></button>
+        <button><img src="assets/photomode_13112026_193411.webp" alt="Vanta at the Afterlife"/></button>
+        <button><img src="assets/photomode_13112026_193615.webp" alt="Vanta combat stance"/></button>
+      </div>
+    </section>
+
+    <section id="notes" class="section final-section section-anchor" data-title="Final Note">
+      <div class="final-flower" aria-hidden="true"></div>
+      <small>SUBJECT SUMMARY // UNSANCTIONED ANNOTATION</small>
+      <h2>Arasaka built a perfect weapon and accidentally left enough of the girl inside for her to become a person anyway.</h2>
+      <p>黒田 ヴァンタ // VANTA KURODA</p>
+    </section>
+  </main>
+
+  <nav id="bottomNav" class="bottom-nav" aria-label="Primary dossier navigation"></nav>
+
+  <dialog id="lightbox"><button id="closeLightbox" aria-label="Close image">×</button><img id="lightboxImg" alt=""/><div class="lightbox-meta"><span>ARCHIVE IMAGE</span><b id="lightboxCount">01 / 12</b></div></dialog>
+
+  <section id="searchPanel" class="search-panel" aria-hidden="true"><div class="search-head"><input id="searchInput" type="search" placeholder="Search dossier…"/><button id="closeSearch">×</button></div><div id="searchResults" class="search-results"></div></section>
+
+  <section id="functionOverlay" class="function-overlay" aria-hidden="true"><div class="function-crosshair"></div><p>CONDITIONED RESPONSE</p><h2>RETURN TO FUNCTION</h2><div class="function-log"><span>TARGET ACQUISITION // ONLINE</span><span>AFFECTIVE FILTER // SUPPRESSED</span><span>MISSION PRIORITY // ABSOLUTE</span></div><button id="exitFunction">RESTORE PERSONALITY LAYER</button></section>
+
+  <div class="audio-panel" id="audioPanel"><button id="audioPlay">▶</button><div><span>AMBIENT SYSTEM</span><b>VANTA // SITE THEME</b></div><input id="volume" type="range" min="0" max="1" step="0.01" value="0.12" aria-label="Ambient volume"/></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
